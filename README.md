@@ -69,6 +69,9 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  La classe Photo est une classe qui représente une photo avec des propriétés comme l'identifiant de l'album, l'identifiant de la photo, le titre, l'url et l'url de la vignette. Elle utilise le mot-clé const pour indiquer que ses instances sont des constantes, c'est-à-dire qu'elles ne peuvent pas être modifiées après leur création. Elle utilise le mot-clé required pour indiquer que ses paramètres sont obligatoires, c'est-à-dire qu'ils ne peuvent pas être omis lors de l'appel du constructeur.
 
+•  La classe Photo définit un constructeur nommé qui prend en paramètres les propriétés de la photo et qui les affecte aux champs de la classe. Un constructeur nommé est un constructeur qui a un nom différent de celui de la classe, ce qui permet de créer plusieurs constructeurs avec des comportements différents.
+
+•  La classe Photo définit également un constructeur nommé fromJson qui prend en paramètre une map de type Map<String, dynamic> et qui renvoie un objet Photo correspondant. Ce constructeur permet de créer un objet Photo à partir d'un objet JSON, en utilisant les valeurs de la map pour initialiser les propriétés de la photo.
 
 
 
