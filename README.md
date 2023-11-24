@@ -38,5 +38,5 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  Elle utilise la fonction jsonDecode pour convertir la chaîne data en un objet Dart correspondant. Dans ce cas, l'objet Dart est une liste de maps, où chaque map représente une histoire Instagram avec des propriétés comme le pseudo, la photo, la photo de profil et la description.
 
-
+•  Elle utilise le `constructeur List<Map<String, dynamic>>.from` pour créer une nouvelle liste de maps à partir de l'objet Dart renvoyé par la fonction `jsonDecode`. Ce constructeur permet de spécifier le type des éléments de la liste, ce qui facilite la vérification du code et la détection des erreurs.
 
