@@ -57,5 +57,17 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  La fonction fetchPhotos utilise la fonction compute pour exécuter la fonction parsePhotos dans un isolat séparé. Un isolat est une unité d'exécution indépendante qui ne partage pas de mémoire avec d'autres isolats. La fonction compute permet de déléguer des tâches intensives en calcul à un isolat secondaire, afin de ne pas bloquer l'interface utilisateur. La fonction compute prend en paramètres la fonction à exécuter et l'argument à lui passer, et renvoie un objet Future qui contient le résultat de la fonction.
 
+•  La fonction parsePhotos est une fonction qui convertit un corps de réponse HTTP en une liste d'objets Photo. Elle prend en paramètre une chaîne de caractères qui représente le corps de la réponse, et renvoie une liste d'objets Photo.
+
+•  La fonction parsePhotos utilise la fonction jsonDecode pour convertir la chaîne de caractères en un objet Dart correspondant. Dans ce cas, l'objet Dart est une liste de maps, où chaque map représente une photo avec des paires clé-valeur. Une Map est une collection de paires clé-valeur.
+
+
+
+
+
+
+
+
+
 
 
