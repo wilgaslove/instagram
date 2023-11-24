@@ -65,6 +65,9 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  La fonction parsePhotos utilise la méthode map pour transformer chaque élément de la liste en un objet Photo, en utilisant le constructeur Photo.fromJson. La méthode map renvoie un objet de type Iterable, qui est une collection d'éléments qui peuvent être parcourus séquentiellement.
 
+•  La fonction parsePhotos utilise le constructeur List.from pour créer une nouvelle liste à partir de l'objet Iterable renvoyé par la méthode map. Ce constructeur permet de spécifier le type des éléments de la liste, ce qui facilite la vérification du code et la détection des erreurs.
+
+•  La classe Photo est une classe qui représente une photo avec des propriétés comme l'identifiant de l'album, l'identifiant de la photo, le titre, l'url et l'url de la vignette. Elle utilise le mot-clé const pour indiquer que ses instances sont des constantes, c'est-à-dire qu'elles ne peuvent pas être modifiées après leur création. Elle utilise le mot-clé required pour indiquer que ses paramètres sont obligatoires, c'est-à-dire qu'ils ne peuvent pas être omis lors de l'appel du constructeur.
 
 
 
