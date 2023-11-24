@@ -40,3 +40,10 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  Elle utilise le `constructeur List<Map<String, dynamic>>.from` pour créer une nouvelle liste de maps à partir de l'objet Dart renvoyé par la fonction `jsonDecode`. Ce constructeur permet de spécifier le type des éléments de la liste, ce qui facilite la vérification du code et la détection des erreurs.
 
+•  Elle stocke la nouvelle liste de maps dans une variable locale nommée stories, qui est de type List<Map<String, dynamic>>.
+
+•  Elle renvoie la valeur de la variable stories comme résultat de la fonction _loadStories.
+
+
+
+
