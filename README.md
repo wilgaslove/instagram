@@ -61,7 +61,9 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 •  La fonction parsePhotos utilise la fonction jsonDecode pour convertir la chaîne de caractères en un objet Dart correspondant. Dans ce cas, l'objet Dart est une liste de maps, où chaque map représente une photo avec des paires clé-valeur. Une Map est une collection de paires clé-valeur.
 
+•  La fonction parsePhotos utilise la méthode cast pour spécifier le type des éléments de la liste, qui sont des maps de type Map<String, dynamic>. Le type String est une séquence de caractères Unicode. Le type dynamic est le type de base de tous les objets dans Dart.
 
+•  La fonction parsePhotos utilise la méthode map pour transformer chaque élément de la liste en un objet Photo, en utilisant le constructeur Photo.fromJson. La méthode map renvoie un objet de type Iterable, qui est une collection d'éléments qui peuvent être parcourus séquentiellement.
 
 
 
