@@ -51,4 +51,4 @@ La fonction `_loadStories` effectue les opérations suivantes:
  
 •  Il définit une fonction asynchrone nommée fetchPhotos qui prend en paramètre un objet de type http.Client et qui renvoie un objet de type Future<List<Photo>>. Un objet Future représente une valeur potentielle ou une erreur qui sera disponible à un moment donné dans le futurhttps://flutter.dev/learn. Une List est une collection ordonnée d'élémentshttps://docs.flutter.dev/ui. Un objet Photo est une classe personnalisée qui représente une photo avec des propriétés comme l'identifiant de l'album, l'identifiant de la photo, le titre, l'url et l'url de la vignette.
 
-
+•  La fonction fetchPhotos utilise la méthode await pour attendre que la méthode client.get termine de faire une requête HTTP GET vers l'URL 'https://jsonplaceholder.typicode.com/photos'. Cette URL renvoie une liste de photos au format JSON (JavaScript Object Notation), qui est un format léger d'échange de données. La méthode await permet d'écrire du code asynchrone de manière plus lisible et plus concise.
