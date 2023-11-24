@@ -46,5 +46,9 @@ La fonction `_loadStories` effectue les opérations suivantes:
 •  Elle renvoie la valeur de la variable stories comme résultat de la fonction _loadStories.
 
 
+# Analyser JSON en arrière-plan
+ `Sérialisation de JSON dans les classes de modèles`
+ 
+•  Il définit une fonction asynchrone nommée fetchPhotos qui prend en paramètre un objet de type http.Client et qui renvoie un objet de type Future<List<Photo>>. Un objet Future représente une valeur potentielle ou une erreur qui sera disponible à un moment donné dans le futurhttps://flutter.dev/learn. Une List est une collection ordonnée d'élémentshttps://docs.flutter.dev/ui. Un objet Photo est une classe personnalisée qui représente une photo avec des propriétés comme l'identifiant de l'album, l'identifiant de la photo, le titre, l'url et l'url de la vignette.
 
 
