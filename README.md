@@ -26,7 +26,9 @@ Le code suivant définit une fonction asynchrone nommée _loadStories qui renvoi
 
 3- Un Map est une collection de paires clé-valeur
 
-4- Le type String est une séquence de caractères Unicode. Le type dynamic est 
-   le type de base de tous les objets dans Dart.
+4- Le type String est une séquence de caractères Unicode.
+
+5- Le type dynamic est le type de base de tous les objets dans Dart.
+
 
 
