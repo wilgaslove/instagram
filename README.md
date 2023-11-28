@@ -77,7 +77,89 @@ La fonction `_loadStories` effectue les opérations suivantes:
 
 
 
+Bonjour Wilgas ADJOVI,
 
+Le CRUD en Flutter fait référence aux opérations de Création, Lecture, Mise à jour et Suppression de données dans une application. Voici un exemple de code pour chaque opération :
+
+Création :
+
+```
+Future<void> createData() async {
+  final response = await http.post(
+    Uri.parse('https://example.com/api/data'),
+    headers: <String, String>{
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+    body: jsonEncode(<String, String>{
+      'name': 'John Doe',
+      'email': 'johndoe@example.com',
+    }),
+  );
+
+  if (response.statusCode == 201) {
+    print('Data created successfully.');
+  } else {
+    throw Exception('Failed to create data.');
+  }
+}
+```
+
+Lecture :
+
+```
+Future<List<Data>> fetchData() async {
+  final response = await http.get(Uri.parse('https://example.com/api/data'));
+
+  if (response.statusCode == 200) {
+    List<dynamic> data = jsonDecode(response.body);
+    return data.map((json) => Data.fromJson(json)).toList();
+  } else {
+    throw Exception('Failed to load data.');
+  }
+}
+```
+
+Mise à jour :
+
+```
+Future<void> updateData(int id) async {
+  final response = await http.put(
+    Uri.parse('https://example.com/api/data/$id'),
+    headers: <String, String>{
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+    body: jsonEncode(<String, String>{
+      'name': 'Jane Doe',
+      'email': 'janedoe@example.com',
+    }),
+  );
+
+  if (response.statusCode == 200) {
+    print('Data updated successfully.');
+  } else {
+    throw Exception('Failed to update data.');
+  }
+}
+```
+
+Suppression :
+
+```
+Future<void> deleteData(int id) async {
+  final response = await http.delete(Uri.parse('https://example.com/api/data/$id'));
+
+  if (response.statusCode == 204) {
+    print('Data deleted successfully.');
+  } else {
+    throw Exception('Failed to delete data.');
+  }
+}
+```
+
+J'espère que cela vous aide. N'hésitez pas à me demander si vous avez d'autres questions ou besoins d'assistance.
+
+Cordialement,
+Cami
 
 
 
