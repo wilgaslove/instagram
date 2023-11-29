@@ -156,10 +156,8 @@ Future<void> deleteData(int id) async {
 }
 ```
 
-J'espère que cela vous aide. N'hésitez pas à me demander si vous avez d'autres questions ou besoins d'assistance.
 
-Cordialement,
-Cami
+
 
 
 
